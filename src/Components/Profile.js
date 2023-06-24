@@ -9,6 +9,7 @@ const Profile = () => {
   function handleSignOut(){
     localStorage.removeItem("token");
     localStorage.removeItem("id");
+    setUserData([]);
     navigate("/");
   }
   useEffect(() => {
