@@ -12,7 +12,6 @@ body{
   background: url(./Components/background.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  overflow: hidden;
 }
 .main-container{
   width: 40%;
