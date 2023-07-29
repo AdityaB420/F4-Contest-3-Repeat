@@ -38,24 +38,38 @@ const Login = () => {
       .catch((error) => console.log(error));
   };
   return (
-    <div className="Login">
-      <h1>Login Page</h1>
-    <input
-      type="text"
-      value={usernameState}
-      onChange={(e) => setUsernameState(e.target.value)}
-      placeholder="username"
-    />
-    <input
-      type="password"
-      value={passwordState}
-      onChange={(e) => setPasswordState(e.target.value)}
-      placeholder="password"
-    />
-    <button type="button" onClick={handleLogin}>
-      Login
-    </button>
-    <p className="errorMessage">{errorMsg}</p>
+    <div className="main-container">
+    <div className="login-container">
+            <div className="login">
+                      <span>Welcome Back 👋</span>
+                      <h3>Sign in to your account</h3>
+                      <label htmlFor="username">Email</label>
+                    <input
+                      type="text"
+                      id="username"
+                      value={usernameState}
+                      onChange={(e) => setUsernameState(e.target.value)}
+                    
+                    />
+                    <label htmlFor="password">Password</label>
+                    <input
+                      type="password"
+                      id="password"
+                      value={passwordState}
+                      onChange={(e) => setPasswordState(e.target.value)}
+                      
+                    />
+            </div>
+            <button type="button" onClick={handleLogin}>
+                      Continue
+                    </button>
+                    <p className="errorMessage">{errorMsg}</p>
+                    <a href="#">Forgot your Password</a>
+  </div>
+  <div className="bottom-text">
+              <span>Don't have an account? </span>
+              <a href="#">Sign Up</a>
+            </div>
   </div>
   );
 };

@@ -30,7 +30,7 @@ const Profile = () => {
         <h2>Name: {userData.firstName} {userData.lastName}</h2>
         <img src={userData.image} alt="user-image"/>
         <UserTable userData={userData} />
-        <button className="sign-out" onClick={handleSignOut}>Sign out</button>
+        
         </>
       )}
     </div>
